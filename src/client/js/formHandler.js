@@ -10,7 +10,7 @@ function handleSubmit(event, form) {
         'departure':formdata.get('trip_date')
     }
     console.log("form submitted");
-    fetch('http://localhost:8081/trip',{
+    fetch('/trip',{
         method:'POST',
         body:JSON.stringify(data),
         mode:'cors',

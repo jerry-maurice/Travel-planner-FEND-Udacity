@@ -32,6 +32,9 @@ WEATHERBIT_URL=https://api.weatherbit.io/v2.0/current?
 WEATHERBIT_API_KEY=###################################
 restcountries=https://restcountries.eu/rest/v2/name/
 
+Once you have setup the APIs, the user can now run 
+- `npm start`
+
 
 ### Extend Options
 I use the rest countries api to get the country flag and display it on the screen

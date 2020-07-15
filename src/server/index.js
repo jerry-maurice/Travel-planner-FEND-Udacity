@@ -1,7 +1,5 @@
 const dotenv = require('dotenv');
-dotenv.config({
-    path:'../../.env'
-});
+dotenv.config();
 
 //store project data
 projectData = {};
@@ -56,8 +54,9 @@ app.get('/test', function (req, res) {
 
 app.post('/trip', async (req, res, next)=>{
     // Create a new date instance 
-    let d = new Date();
-    let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
+    //let d = new Date();
+    //console.log(process.env.GEONAME_URL);
+    //let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
     //save response to object
     let location = await fetchCityDetail(req.body.location);
     projectData['location'] = location.location;
