@@ -1,0 +1,28 @@
+/*design of card*/
+
+.card {
+    margin: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    -moz-box-shadow:3px 3px 5px 6px #ccc;
+    -webkit-box-shadow:3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px #ccc;
+
+    .main-display-card{
+        height: 400px;
+    }
+}
+
+.result{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+
+    h2, h3, p{
+        margin-bottom: -5px;
+    }
+    img{
+        margin: 10px auto;
+    }
+}

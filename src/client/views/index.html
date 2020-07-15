@@ -2,41 +2,58 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Test</title>
-        <script type="text/javascript" src="../../../dist/main.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Travel App</title>
     </head>
 
     <body>
-
-        <header>
-            <div class="">
-                Logo
-            </div>
-            <div class="">
-                navigation
-            </div>
-        </header>
-
-        <main>
-            <section>
-                <form class="" onsubmit="return handleSubmit(event)">
-                    <input id="name" type="text" name="input" value=""  placeholder="Name">
-                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
-                </form>
-            <section>
-
-            <section>
-                <strong>Form Results:</strong>
-                <div id="results"></div>
-            </section>
-        </main>
-
-        <footer>
-            <p>This is a footer</p>
-        </footer>
+        <div class="container">
+            <header>
+                <nav class="navbar">
+                    <ul class="navigation">
+                        <li class="nav-link"></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div class="content-header">
+                    <h1>Travel Application</h1>
+                </div>
+                <div class="content">
+                    <section class="side-content column">
+                    <!-- Form used to ask user about trip --> 
+                        <div class="card">
+                            <form onsubmit="return Client.handleSubmit(event, this);" id="travel_form">
+                                <div class="form-group">
+                                    <label>Location</label>
+                                    <input type="text" class="" id="" name="location" placeholder="Enter City" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Departure</label>
+                                    <input type="date" class="" id="" name="trip_date" placeholder="Enter date of departure" required>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="" id="">Submit</button>
+                                    <button type="reset" onclick="return Client.handleReset();" class="" id="">Reset</button>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                    <section class="main-content column">
+                    <!-- Display detail about trip -->
+                        <div class="card" id="display-result">
+                            
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <footer>
+                
+            </footer>
+        </div>
 
         <script>
-            // Check that service workers are supported
+            /* Check that service workers are supported*/
             if ('serviceWorker' in navigator) {
                 // Use the window load event to keep the page load performant
                 window.addEventListener('load', () => {

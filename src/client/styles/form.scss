@@ -1,12 +1,28 @@
 form {
-    border: 1px solid #545454;
-    border-radius: 3px;
-    padding: 40px;
+    .form-group{
+        margin: 10px auto;
+        input {
+            padding: 5px 20px;
+            line-height: 16px;
+            margin: 10px 0;
+            width: 300px;
+        }
+        button{
+            width: 100px;
+            height: 30px;
+        }
+        button[type=submit]{
+            color: white;
+            background-color: $third-color;
+        }
+        button[type=reset]{
+            color: white;
+            background-color: $navigation-link;
+        }
+    }
+    
+    @media (min-width:900px){
+    }
 }
 
-input {
-    padding: 5px 20px;
-    width: 100%;
-    line-height: 16px;
-    margin: 10px 0;
-}
+

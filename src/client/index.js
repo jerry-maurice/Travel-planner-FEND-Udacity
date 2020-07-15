@@ -1,18 +1,18 @@
-import { checkForName } from './js/nameChecker'
-import { handleSubmit } from './js/formHandler'
+import { handleSubmit, handleReset } from './js/formHandler'
+import { intialization, main_display_result, removeChilds } from './js/app'
 
-import './styles/base.scss'
-import './styles/footer.scss'
-import './styles/form.scss'
-import './styles/header.scss'
-import './styles/resets.scss'
+/*style*/
+import './styles/main.scss'
 
-console.log(checkForName);
-
-//alert("I EXIST")
-console.log("CHANGE!!");
+/**
+ * initialization
+ */
+intialization();
 
 export{
-    checkForName,
-    handleSubmit
+    handleReset,
+    handleSubmit,
+    intialization,
+    removeChilds,
+    main_display_result,
 }

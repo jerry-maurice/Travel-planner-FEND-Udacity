@@ -14,7 +14,7 @@ module.exports = {
         library: 'Client'
     },
     devServer: {
-        port: 8082,
+        port: 8085,
     },
     module: {
         rules: [

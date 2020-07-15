@@ -1,5 +1,31 @@
-header {
+header{
+    background-color: $third-color;
+    border-bottom: 2px solid $navigation-link;
+}
+.navbar{
+    font-size: 18px;
     display: flex;
-    justify-content: space-between;
-    padding: 10px 40px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navigation{
+	list-style-type: none;
+	text-align: center;
+	margin: 15px auto;
+}
+
+.navigation{
+	display: flex;
+	flex-direction: column;
+}
+
+.nav-link{
+	text-decoration: none;
+	color: $navigation-link;
+	text-transform: capitalize;
+}
+
+.nav-link{
+	margin-left: 40px;
 }
